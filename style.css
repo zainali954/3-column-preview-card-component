@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
+    /* (paragraphs) */
+    --Very-light-gray : hsl(0, 0%, 95%);
+    /* (background, headings, buttons) */
+}
+body{
+    background-color: var(--Very-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card{
+    /* width: 400px; */
+    width: 100%;
+    padding: 51px;
+}
+
+.card h2{
+    color: var(--Very-light-gray);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin: 26px 0;
+    text-transform: uppercase;
+}
+
+.card p{
+    color: var(--Transparent-white);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif; 
+    margin-bottom: 85px;
+    line-height: 1.7;
+}
+
+#card-1{
+    background-color: var(--Bright-orange);
+}
+
+
+#card-2{
+    background-color: var(--Dark-cyan);
+}
+
+#card-3{
+    background-color: var(--Very-dark-cyan);
+}
+
+.btn{
+    background-color: var(--Very-light-gray);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif; 
+    padding: 14px 30px;
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#btn-1{
+    color: var(--Bright-orange);
+}
+#btn-1:hover,
+#btn-1:focus{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+
+}
+
+#btn-2{
+    color: var(--Dark-cyan);
+}
+#btn-2:hover,
+#btn-2:focus{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+
+}
+
+#btn-3{
+   color: var(--Very-dark-cyan);
+}
+#btn-3:hover,
+#btn-3:focus{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+
+}
+
+@media screen and (max-width:768px) {
+    body{
+        align-items: start;
+    }
+    .container{
+        margin: 50px 0;
+        flex-direction: column;
+    width: 330px;
+
+    }
+    .card p{
+        margin-bottom: 25px;
+    }
+}
